@@ -26,6 +26,7 @@
             height: 100vh;
             overflow: hidden;
             gap: 1rem;
+            background-color: rgb(240, 240, 240);
         }
 
         h1 {font-size: 3rem}
@@ -36,7 +37,7 @@
 
         nav {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             gap: 1rem;
         }
 
@@ -46,7 +47,7 @@
             background-color: #31d2f7;
             padding: 0.55rem 2.8rem 0.4rem 2.8rem;
             border-radius: 12px;
-            font-size: 1.75rem;
+            font-size: 1.7rem;
         }
 
         a:hover {
@@ -57,6 +58,19 @@
         a:focus, a:active {border-style: dashed}
         a:active {background-color: #d48c00}
     </style>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCqfQlqdeHXYo_w_iGU-Gb1ckSeW6jHvf0",
+            authDomain: "static-dev-site-4d548.firebaseapp.com",
+            projectId: "static-dev-site-4d548",
+            storageBucket: "static-dev-site-4d548.appspot.com",
+            messagingSenderId: "700945868133",
+            appId: "1:700945868133:web:c9e0373defcd6e76d32d8c"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
 </head>
 <body>
     <div>
@@ -68,6 +82,9 @@
             </a>
             <a href="https://www.linkedin.com/in/dev-jr/" target="_blank">
                 <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:me@jonathanrobinson.ca">
+                <i class="fas fa-inbox"></i>
             </a>
         </nav>
     </div>
